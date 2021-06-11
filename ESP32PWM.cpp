@@ -268,7 +268,7 @@ bool ESP32PWM::checkFrequencyForSideEffects(double freq) {
 				double diff = abs(ChannelUsed[pwm]->myFreq - freq);
 				if (abs(diff) > 0.1) {
 					Serial.println(
-							"\tWARNING PWM channel " + String(pwmChannel)
+							"\tWARNING PWM2 channel " + String(pwmChannel)
 									+ " shares a timer with channel "
 									+ String(pwm) + "\n"
 											"\tchanging the frequency to "
