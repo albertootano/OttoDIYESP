@@ -95,7 +95,7 @@ int ESP32PWM::allocatenext(double freq) {
 		return pwmChannel;
 	}
 	Serial.println(
-			"ERROR All PWM timers allocated! Can't accomodate    2 " + String(freq)
+			"ERROR All PWM timers allocated! Can't accomodate    2  3 " + String(freq)
 					+ "Hz\r\nHalting...");
 	while (1)
 		;
